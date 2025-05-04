@@ -31,6 +31,8 @@
 .order-details-right{
     width: 100%;
     max-width: 500px;
+    padding: 20px;
+  box-sizing: border-box;
 }
 .order-page .cart-total button{
     margin-top: 30px;
@@ -38,4 +40,28 @@
 }
 .order-page .cart-total{
     margin-top: -50px;
+}
+
+
+@media (max-width: 768px) {
+  .order-details-right {
+    max-width: 100%;
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .order-page {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .order-details-left,
+  .order-details-right {
+    max-width: 100%;
+  }
+
+  .order-page .cart-total {
+    margin-top: 0; 
+  }
 }
