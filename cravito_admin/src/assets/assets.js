@@ -16,4 +16,4 @@ export const assets ={
     parcel_icon
 }
 
-export const url = "http://localhost:2113";
+export const url = "https://cravito-website-backend.onrender.com";
