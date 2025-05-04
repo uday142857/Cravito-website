@@ -65,7 +65,7 @@ const Context = (props) => {
     }
     loadItems();
   }, []);
-  const url = "http://localhost:2113";
+  const url = "https://cravito-website-backend.onrender.com";
   const data = {
     food_list,
     cartItems,

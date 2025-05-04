@@ -8,7 +8,7 @@ import Orders from './pages/orders/Orders'
 import { ToastContainer } from "react-toastify";
 
 function App() {
-  const url = "http://localhost:2113"
+  const url = "https://cravito-website-backend.onrender.com"
   return (
     <div className="app">
       <ToastContainer />
