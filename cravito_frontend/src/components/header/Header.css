@@ -3,7 +3,7 @@
   height: 40vw;
   /* width: 1000px; */
   margin: 20px auto;
-  background: url("./header3.jpg") no-repeat;
+  background: url("../../assets/header3.jpg") no-repeat;
   background-size: contain;
   position: relative;
   border-radius: 20px 20px;
@@ -86,7 +86,7 @@
     font-size: 11px;
   }
 } */
- @media (max-width: 1050px) {
+@media (max-width: 1050px) {
   .header-content {
     max-width: 60%;
     bottom: 100px;
@@ -132,4 +132,3 @@
     font-size: 11px;
   }
 }
-
