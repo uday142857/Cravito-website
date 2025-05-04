@@ -6,16 +6,18 @@ import { contextStore } from "../../context/Context";
 function Navbar({ setLogin }) {
   const [acti, setActi] = useState("Home");
   const { getCartItemCost, token, setToken } = useContext(contextStore);
-  const navigate = useNavigate()
-  const logout = ()=>{
-    localStorage.removeItem("token")
-    setToken("")
-    navigate("/")
-
-  }
+  const navigate = useNavigate();
+  const logout = () => {
+    localStorage.removeItem("token");
+    setToken("");
+    navigate("/");
+  };
   return (
     <div className="navbar">
-      <h1 className="logo">Cravito</h1>
+      <Link to="/">
+        <h1 className="logo">Cravito</h1>
+      </Link>
+
       <ul className="navbar-menu">
         <Link
           to="/"
@@ -75,7 +77,11 @@ function Navbar({ setLogin }) {
           <div className="nav-profile">
             <i class="bi bi-person-circle"></i>
             <ul className="nav-profile-dropdown">
-              <li onClick={()=>{navigate("/myorders")}}>
+              <li
+                onClick={() => {
+                  navigate("/myorders");
+                }}
+              >
                 <i class="bi bi-bag-heart-fill"></i>
                 <p>Orders</p>
               </li>
