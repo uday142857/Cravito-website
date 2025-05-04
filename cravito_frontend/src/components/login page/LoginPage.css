@@ -1,10 +1,13 @@
 .login-page {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 999;
   background-color: #00000090;
   display: grid;
+  overflow-y: auto;
 }
 .login-form {
   place-self: center;
@@ -28,43 +31,41 @@
   height: 20px;
   cursor: pointer;
 }
-.login-inputs{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.login-inputs {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.login-inputs input{
-    outline: none;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 5px;
+.login-inputs input {
+  outline: none;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
 }
-.login-form button{
-    border: none;
-    padding: 15px 20px;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    font-size: 17px;
-    cursor: pointer;
+.login-form button {
+  border: none;
+  padding: 15px 20px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
 }
-.login-conditions{
-    display: flex;
-    margin-top: -10px;
-    
+.login-conditions {
+  display: flex;
+  margin-top: -10px;
 }
-.login-conditions p{
-    margin-left: 10px;
+.login-conditions p {
+  margin-left: 10px;
 }
-.login-form span{
-    color: rgb(4, 176, 244);
-    cursor: pointer;
-
+.login-form span {
+  color: rgb(4, 176, 244);
+  cursor: pointer;
 }
 
-@media (max-width:550px) {
-  .login-form{
+@media (max-width: 550px) {
+  .login-form {
     width: 350px;
     padding: 15px 25px;
   }
