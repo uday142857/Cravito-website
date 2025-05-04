@@ -1,0 +1,39 @@
+.add{
+    width: 70%;
+    margin-left: 27%;
+    margin-top: 100px;
+    font-size: 18px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.upload-img img{
+    width: 150px;
+    cursor: pointer;
+}
+.add-name ,.add-description{
+    width: 300px;
+}
+.add-name input ,.add-description textarea{
+    padding: 10px;
+}
+.add-category-price{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* width: 300px; */
+}
+.add-category select,.add-price input{
+    padding: 10px;
+}
+.add-btn{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 100px;
+    cursor: pointer;
+}

@@ -1,0 +1,157 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+        font-size:45px ;
+    }
+.navbar-menu{
+     display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    /* color:#49557e ; */
+}
+/* .navbar-menu li:active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+} */
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+.navbar-right i{
+    font-size: 20px;
+    
+}
+.navbar-right i:hover{
+    text-shadow: 0px 0px 10px black;
+}
+
+.navbar button{
+    background-color: transparent;
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover{
+    background-color: black;
+    color: white;
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+.navbar li{
+    cursor: pointer;
+}
+.navbar-cart{
+    position: relative;
+}
+.navbar-cart .cart-dot{
+    position:absolute;
+    min-height: 7px;
+    min-width: 7px;
+    background-color: red;
+    border-radius: 5px;
+    top: -5px;
+    right: -5px;
+}
+.nav-profile{
+    position: relative;
+    cursor: pointer;
+}
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+    
+}
+.nav-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid white;
+    outline: 2px solid black;
+    border-radius: 4px;
+    list-style: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+
+}
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:1050px){
+    .navbar h1{
+        font-size:41px ;
+    }
+    .navbar-menu{
+        gap: 18px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 32px;
+    }
+    .navbar-right button{
+        padding: 11px 15px;
+    }
+}
+@media (max-width:900px){
+    .navbar h1{
+        font-size:37px ;
+    }
+    .navbar-menu{
+        gap: 16px;
+        font-size: 14px;
+    }
+    .navbar-right{
+        gap: 25px;
+    }
+    .navbar-right button{
+        padding: 9px 12px;
+    }
+}
+@media (max-width:700px){
+    .navbar h1{
+        font-size:34px ;
+    }
+    .navbar-menu{
+        gap: 14px;
+        font-size: 12px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right button{
+        padding: 6px 1opx;
+    }
+    .nav-profile:hover .nav-profile-dropdown{
+    padding: 7px;
+}
+
+}
+@media (max-width:600px){
+    .navbar h1{
+        font-size:32px ;
+    }
+    .navbar-menu{
+        display: none;
+    }
+    
+}

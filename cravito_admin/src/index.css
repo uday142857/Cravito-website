@@ -1,0 +1,26 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+.app{
+  margin: auto;
+  width: 92%;
+}
+.app-side{
+  display: flex;
+}
+hr{
+  border: none;
+  height: 1px;
+  background-color: #a9a9a9;
+}

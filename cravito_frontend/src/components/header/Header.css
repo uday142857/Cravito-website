@@ -1,0 +1,135 @@
+.header {
+  /* padding: 20px 0px; */
+  height: 40vw;
+  /* width: 1000px; */
+  margin: 20px auto;
+  background: url("./header3.jpg") no-repeat;
+  background-size: contain;
+  position: relative;
+  border-radius: 20px 20px;
+}
+.header-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 50%;
+  gap: 15px;
+  left: 80px;
+  bottom: 150px;
+  animation: blink 3s;
+  transition: smooth;
+}
+.header-content h2 {
+  font-weight: 500px;
+  color: white;
+  font-size: max(4.5vw, 22px);
+}
+.header-content p {
+  font-weight: 500px;
+  color: white;
+  /* font-size: max(4.5vw,22px); */
+}
+.header-content button {
+  background-color: white;
+  font-size: 18px;
+  border: 1px solid black;
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header-content button:hover {
+  background-color: black;
+  color: white;
+}
+/* @media (max-width: 1050px) {
+  .header-content {
+    max-width: 45%;
+    bottom: 130px;
+  }
+}
+@media (max-width: 900px) {
+  .header-content {
+    max-width: 48%;
+    bottom: 110px;
+    left: 70px;
+  }
+  .header-content p {
+    display: none;
+  }
+  .header-content button {
+    padding: 13px 17px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .header-content {
+    max-width: 55%;
+    bottom: 90px;
+    left: 55px;
+  }
+  
+  .header-content button {
+    padding: 10px 11px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .header-content {
+    max-width: 65%;
+    bottom: 60px;
+    left: 40px;
+  }
+  .header-content button {
+    padding: 7px 9px;
+    font-size: 11px;
+  }
+} */
+ @media (max-width: 1050px) {
+  .header-content {
+    max-width: 60%;
+    bottom: 100px;
+    left: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-content {
+    max-width: 65%;
+    bottom: 85px;
+    left: 50px;
+  }
+  .header-content p {
+    display: none;
+  }
+  .header-content button {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-content {
+    max-width: 75%;
+    bottom: 70px;
+    left: 35px;
+  }
+  .header-content button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    max-width: 85%;
+    bottom: 50px;
+    left: 20px;
+  }
+  .header-content button {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
+
